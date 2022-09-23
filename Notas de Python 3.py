@@ -1,15 +1,158 @@
 #||||||||||||||||||||||||||||||||||||-NOTAS DE PYTHON-||||||||||||||||||||||||||||||||||||
-#El siguiente programa contiene la mayoria de los conocimientos sobre python 3.
+#El siguiente programa contiene la mayoria de los temas y funciones mas importantes de python 3.
 #El programa esta dividido en temas cuyos titulos se encuentran en ingles para facilitar su busqueda.
-#Cada tema tiene un codigo de ejemplo junto con un comentario en español que explica el primero.
-#El objetivo de esta bibliografia es que sea utilizada como metodo de repaso o como lugar de consulta en caso
-#de olvidarnos alguna sintaxis o funcion aprendida previamente
-#Si no se cuenta con ningun conocimiento en la materia se recomienda aprender primero en algunos de los sitios 
-#detallados en el archivo Bibliografias.txt adjuntado
-#Si encuentra algun typo o tiene alguna recomendacion se agradece el feedback en:
-#Creado por Valentino Amato Roberts
-#Ultima edicion: 18/5/2022
-#|||||||||||||||-COMENTARIOS-|||||||||||||||
+#Cada tema tiene un codigo de ejemplo junto con un comentario en español que lo explica.
+#El objetivo de esta bibliografia es que sirva como metodo de repaso o como lugar de consulta en caso
+#de olvidar alguna sintaxis o funcion aprendida previamente
+#Si encuentra algun error, tiene alguna recomendacion o busca mas informacion: https://github.com/valentinoamato/Notas-de-Python-3
+
+#Contenidos:
+'''
+1. COMMENTS
+
+2. DATA TYPES
+   * INT
+   * FLOAT
+   * COMPLEX
+   * BOOL
+   * STRING
+   * RAW STRING
+   * LIST
+   * TUPLE
+   * RANGE
+   * DICTIONARIES
+   *  SETS
+   *  FROZEN SETS
+   *  BYTES (Incompleto)
+   *  BYTEARRAT (Incompleto)
+   *  MEMORYVIEW (Incompleto)  
+
+3. IF-ELIF-ELSE
+
+4. OPERATORS
+   * COMPARISON OPERATORS
+   * ARITHMETIC OPERATORS
+   * LOGICAL OPERATORS
+   * ASIGNMENT OPERATORS
+   * IDENTITY OPERATORS
+   * MEMBERSHIP OPERATORS
+   * BITWISE OPERATORS
+
+5. WHILE
+   * BREAK, CONTINUE AND PASS
+
+6. ITER
+
+7. FOR
+
+8. LIST COMPRENHENSION
+
+9. FUNCTIONS
+
+10. SCOPE
+   * GLOBAL
+   * NONLOCAL
+
+11. ARGUMENTS
+   * KWARGS 
+
+12. LAMBDAS
+
+13. DECORATORS
+
+14. GENERATORS
+
+15. DOSCSTRINGS
+
+16. MODULES
+
+17. PACKAGES
+
+18. EXCEPTIONS
+
+19. RAISE
+
+20. ASSERTIONS
+
+21. CLASSES
+
+22. MAGIC METHODS
+    * \_\_init\_\_
+    * \_\_new\_\_
+    * \_\_str\_\_
+    * \_\_repr\_\_
+    * \_\_getattr\_\_
+    * \_\_getattribute\_\_
+
+23. PRIVATE METHODS AND ATRIBUTES
+
+24. PROPERTIES
+
+25. CLASSMETHOD
+
+26. STATICMETHOD
+
+27. ISINSTANCE
+
+28. SETTERS-GETTERS-DELETERS
+
+29. INHERITANCE
+
+30. MULTIPLE INHERITANCE
+
+31. SUPER
+
+32. OVERRIDE
+
+33. REGEX
+    * REPETITIONS
+    * GROUPING
+    * GREEDY AND NON-GREEDY
+    * REGEX FUNCTIONS
+       * COMPILE
+       * MATCH
+       * SEARCH
+       * FINDALL
+       * FINDITER
+       * SPAN
+       * STRING
+       * GROUP
+       * SXPAND
+       * SPLIT
+       * SUB
+       * SUBN
+    * COMPILATION FLAGS
+       * IGNORECASE
+       * DOTALL
+       * MULTILINE
+       * VERBOSE
+    * LOOKAROUNDS
+    * REGEX METACHARACTERS TABLE
+
+34. BUILT-IN MODULES
+    * OS
+    * RANDOM
+    * DATETIME
+    * MATH
+
+35. BUILT-IN MODULES
+    * BIN
+    * ABS
+    * MIN-MAX
+'''
+#Para encontrar cualquiera de los temas mostrados en el indice es recomendable usar 
+#La funcion de busqueda proporcionada por el editor de texto en uso
+#Creado por Valentino Amato 
+#Ultima edicion: 22/9/2022
+#
+#
+#
+#
+#
+#
+#
+#||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-INICIO DE LAS NOTAS-||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||#
+#|||||||||||||||-COMMENTS-|||||||||||||||
 #Metodo 1 de comentario
 '''Metodo 2 de comentario'''
 #||||||||||||||||||||||||||||||||||||-DATA TYPES-|||||||||||||||||||||||||||||||||||| 
@@ -1672,6 +1815,13 @@ print(abs(q))  #Usamos abs para imprimir el valor absoluto de la variable (5)
 a = [1,4,6,45.5,-4,-45.5] #Creamos una lista con numeros
 print(min(a))             #Imprimimos el numero menor de la lista con min
 print(max(a))             #Imprimimos el numero mayor de la lista con max
+#|||||||||-ANY-|||||||||
+#any() recibe como argumento un iterable y retorna True si alguno de sus elementos es equivalente a True
+a = [True,False,True]     #Creamos una lista con valores booleanos
+print(any(a))             #Llamamos a la funcion any() con 'a' de argumento y imprimimos el retorno (True)
+a[0],a[2] = False, False  #Modificamos la lista 'a'
+print(any(a))             #Llamamos a la funcion any() con 'a' de argumento y imprimimos el retorno (False)
+
 
 #|||||||||-THINGS-TO-ADD-|||||||||
 
