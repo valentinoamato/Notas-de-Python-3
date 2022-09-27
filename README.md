@@ -103,10 +103,12 @@
     * RANDOM
     * DATETIME
     * MATH
-1. BUILT-IN MODULES
+1. BUILT-IN FUNCTIONS
     * BIN
     * ABS
     * MIN-MAX
+    * ANY
+    * MAP
   
 # Mas información
 Los apuntes se encuentran en 'Notas de Python 3.py' ordenados por temas.

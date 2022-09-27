@@ -143,7 +143,7 @@
 #Para encontrar cualquiera de los temas mostrados en el indice es recomendable usar 
 #La funcion de busqueda proporcionada por el editor de texto en uso
 #Creado por Valentino Amato 
-#Ultima edicion: 22/9/2022
+#Ultima edicion: 26/9/2022
 #
 #
 #
@@ -1815,12 +1815,28 @@ print(abs(q))  #Usamos abs para imprimir el valor absoluto de la variable (5)
 a = [1,4,6,45.5,-4,-45.5] #Creamos una lista con numeros
 print(min(a))             #Imprimimos el numero menor de la lista con min
 print(max(a))             #Imprimimos el numero mayor de la lista con max
+
 #|||||||||-ANY-|||||||||
 #any() recibe como argumento un iterable y retorna True si alguno de sus elementos es equivalente a True
 a = [True,False,True]     #Creamos una lista con valores booleanos
 print(any(a))             #Llamamos a la funcion any() con 'a' de argumento y imprimimos el retorno (True)
 a[0],a[2] = False, False  #Modificamos la lista 'a'
 print(any(a))             #Llamamos a la funcion any() con 'a' de argumento y imprimimos el retorno (False)
+
+#|||||||||-MAP-|||||||||
+#map(fun, iter) recibe como argumento una funcion y un iterable (lista, tupla, etc)
+#Returna un objeto 'map' (que iterable) que esta compuesto por todos los retornos de la funcion a la que se llama con cada argumento de el iterable 
+def doblar(n):                 #Creamos una funcion 'doblar' que recibe como argumento un numero
+    return 2*n               #Y retorna el doble del numero recibido como argumento
+  
+numbers = (1, 2, 3, 4)       #Creamos una tupla que contiene numeros
+result = map(doblar, numbers)  #Usamos map() para pasar todos los numeros de la tupla a la funcion, y crear un objeto 'map' con los retornos
+print(result)                #Imprimimos el resultado del map(): '<map object at 0x000001AA9576BCD0>'
+print(type(result))          #Imprimimos el typo de dato del resultado '<class 'map'>'
+print(list(result))          #Imprimimos el resultado transformado en una lista: '[2, 4, 6, 8]'. 
+#Como se puede apreciar el resultado transformado en lista contiene el los numeros de la tupla multiplicados por dos
+#Que es exactamente la operacion que realizo la funcion doblar
+
 
 
 #|||||||||-THINGS-TO-ADD-|||||||||
