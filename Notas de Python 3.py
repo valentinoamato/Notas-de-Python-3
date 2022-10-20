@@ -216,7 +216,10 @@ Frase = Frase.lower()               #Cambia es string poniendo todo en minuscula
 Frase = Frase.upper()               #Cambia es string poniendo todo en mayusculas
 Frase = Frase.title()               #Cambia es string poniendo en mayuscula la primer letra de cada palabra
 Frase = Frase.capitalize()          #Convierte la primera letra del string en mayuscula 
-Frase = Frase.strip()               #Remueve las mayusculas, si las hay, de el inicio y el final del string
+
+Frase = Frase.strip()               #Remueve los caracteres dados, si existen, de el inicio y el final del string. Por defecto remueve espacios en blanco
+Frase = Frase.strip("Ml")           #Remueve "M" o "l", si existen en el inicio o/y el final del string
+
 Frase = Frase.swapcase()            #Convierte todas las letras mayusculas en minusculas y viceversa 
 
 Frase = Frase[0:4]                  #Imprime los caracteres seleccionados del string
