@@ -111,6 +111,7 @@
     * REGEX FUNCTIONS
        * COMPILE
        * MATCH
+       * FULLMATCH
        * SEARCH
        * FINDALL
        * FINDITER
@@ -1511,6 +1512,14 @@ print(patron.search("pepe esta durmiendo").group())         #De esta manera pode
 print(re.match("hola","hola como estas").group())           #Buscamos el patron "hola" en "hola como estas" y usamos .group(). El retorno es 'hola'
 print(re.match("hola","como estas hola"))                   #Buscamos 'hola' en 'como estas hola'. Como el patron 'hola' no esta en el inicio del string
                                                             #No hay coincidencia y retorna none. Si entonces usaramos .group() generariamos un error
+
+#FULLMATCH() es similar a match() pero retorna un objeto 'match' si y solo si el string coincide en su totalidad con el patron
+#Al igual que con match() se puede usar .group() para transformar el objeto 'match' en un string que contiene la ocurrencia
+
+print(re.fullmatch('hola','hola').group())                  #Busca el patron en el string y como conciden completamente retorna un objeto y usamos .group()
+print(re.fullmatch("hola","hola como estas"))               #Busca el patron "hola" en "hola como estas". Retorna None, usar .group() generaria un error
+print(re.fullmatch("hola","como estas hola"))               #Busca el patron "hola" en "como estas hola". Retorna None, usar .group() generaria un error
+#En los anteriores dos ejemplos el patron se encuentra en el string, pero como no coinciden completamente retorna None
 
 #SEARCH() busca un patron y retorna la primera ocurrencia en forma de un objeto 'match'
 #A diferencia de match(), search() busca el la ocurrencia en todo el string

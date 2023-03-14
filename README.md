@@ -81,6 +81,7 @@
     * REGEX FUNCTIONS
        * COMPILE
        * MATCH
+       * FULLMATCH
        * SEARCH
        * FINDALL
        * FINDITER
