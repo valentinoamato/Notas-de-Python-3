@@ -266,6 +266,7 @@ Lista.remove(True)                  #Borra el dato de la lista que se elija
 Lista_pop = Lista.pop(3)            #Toma el dato indicado de la lista y lo almacena en la nueva variable, predeterminadamente toma el ultimo dato(si se dejan los parentesis en blanco)
 Lista2.clear()                      #Borra todos los elementos de la lista deseada
 Nueva_lista = Lista.copy()          #Creamos una nueva lista con el los elementos de otra, pero que son independientes entre si
+Nueva_lista = Lista[:]              #Otra forma forma de hacerlo
 Lista.reverse()                     #Invierte el orden de los datos en la lista
 print(Lista.count("mundo"))         #Imprime la cantidad de elementos con un valor dado          
 print(Lista.index("mundo",0,20))    #Imprime el indice mas bajo en el que se encuentra un elemento dado en una lista
