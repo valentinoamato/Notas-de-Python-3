@@ -263,7 +263,7 @@ Lista3 = [["hola","aloh"],[12,34]]  #Creamos una lista que contiene listas dentr
 Lista.append("palabra")             #Añade un dato al final de la lista
 Lista.insert(2,"cruel")             #Inserta un dato en la lista en la posicion indicada en el primer valor
 Lista.remove(True)                  #Borra el dato de la lista que se elija
-Lista_pop = Lista.pop(3)            #Toma el dato indicado de la lista y lo almacena en la nueva variable, predeterminadamente toma el ultimo dato(si se dejan los parentesis en blanco)
+Lista_pop = Lista.pop(3)            #Borra el elemento en la posicion dada de la lista y lo retorna, predeterminadamente toma el ultimo elemento de la lista (si se dejan los parentesis en blanco)
 Lista2.clear()                      #Borra todos los elementos de la lista deseada
 Nueva_lista = Lista.copy()          #Creamos una nueva lista con el los elementos de otra, pero que son independientes entre si
 Nueva_lista = Lista[:]              #Otra forma forma de hacerlo
